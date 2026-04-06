@@ -145,7 +145,7 @@ export const ContactSection = ({ t }: ContactSectionProps) => (
               </div>
               <div>
                 <div className="text-lg font-bold text-brand-dark">{t.contact.info.hours}</div>
-                <p className="text-brand-muted">9:00 AM – 5:00 PM, Every Day</p>
+                <p className="text-brand-muted">7:00 AM – 6:00 PM, Every Day</p>
               </div>
             </div>
           </div>
