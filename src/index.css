@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&family=Outfit:wght@400;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-brand-dark: #1f3524;
+  --color-brand-muted: #5b6b5b;
+  --color-brand-light: #f4f5f1;
+  --color-brand-brown: #5a3b13;
+  --color-brand-cream: #fbf8f2;
+  --color-brand-olive: #2f4a35;
+
+  --font-sans: "Manrope", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Outfit", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-light text-slate-900 antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .bg-hero-pattern {
+    background-image:
+      radial-gradient(1200px 500px at 10% 10%, rgba(90, 59, 19, 0.18), transparent 60%),
+      radial-gradient(900px 420px at 90% 10%, rgba(31, 53, 36, 0.28), transparent 60%),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.55));
+  }
+
+  .bg-hero-wash {
+    background-image:
+      radial-gradient(1200px 600px at 15% 5%, rgba(90, 59, 19, 0.08), transparent 60%),
+      radial-gradient(900px 500px at 90% 10%, rgba(31, 53, 36, 0.12), transparent 55%),
+      linear-gradient(180deg, rgba(244, 245, 241, 0.78), rgba(244, 245, 241, 0.35) 45%, rgba(244, 245, 241, 0.85));
+  }
+
+  .text-shadow-soft {
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.25);
+  }
+}
