@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react';
 import type { Translation } from '../content/translations';
 
 type GalleryProps = {
@@ -23,6 +24,15 @@ export const Gallery = ({ t }: GalleryProps) => (
             <img src="/gallery/gallery5.jpeg" alt="Healthy tree canopy" className="h-full w-full object-cover" />
           </div>
         </div>
+      </div>
+      <div className="mt-16 flex justify-center">
+        <a
+          href="#full-gallery"
+          className="flex items-center gap-3 rounded-2xl bg-brand-brown px-8 py-4 text-lg font-bold text-white shadow-xl transition-all hover:translate-y-[-2px] hover:shadow-2xl active:translate-y-[1px]"
+        >
+          View Full Gallery
+          <Icon icon="heroicons:arrow-right-20-solid" className="h-5 w-5" />
+        </a>
       </div>
     </div>
   </section>

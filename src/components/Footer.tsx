@@ -50,6 +50,9 @@ export const Footer = ({ t }: FooterProps) => (
             <a href="tel:16123829542" className="block text-2xl font-bold transition-colors hover:text-brand-brown">
               +1 612-382-9542
             </a>
+            <a href="tel:16123828804" className="block text-2xl font-bold transition-colors hover:text-brand-brown">
+              +1 612-382-8804
+            </a>
             <a
               href="https://api.whatsapp.com/send/?phone=16123829542"
               className="flex items-center justify-center gap-2 rounded-xl bg-emerald-600 px-6 py-3 font-bold text-white transition-all hover:bg-emerald-500"

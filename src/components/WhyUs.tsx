@@ -7,7 +7,7 @@ type WhyUsProps = {
 
 export const WhyUs = ({ t }: WhyUsProps) => (
   <section id="about" className="bg-brand-dark py-24 text-white">
-    <div className="mx-auto grid max-w-[1200px] items-center gap-16 px-4 lg:grid-cols-2">
+    <div className="mx-auto grid max-w-[1200px] items-center gap-16 px-4 lg:grid-cols-[0.8fr_1.2fr]">
       <div>
         <h2 className="text-4xl font-bold md:text-6xl">{t.whyUs.title}</h2>
         <p className="mb-12 mt-6 text-xl leading-relaxed text-brand-light/80">{t.whyUs.subtitle}</p>
@@ -25,13 +25,19 @@ export const WhyUs = ({ t }: WhyUsProps) => (
           ))}
         </div>
       </div>
-      <div className="relative">
-        <img
-          src="/gallery/gallery7.webp"
-          alt="Tree service professionals"
-          className="rounded-[32px] shadow-2xl"
-        />
-        <div className="absolute -bottom-8 -left-8 hidden rounded-[28px] bg-brand-brown p-6 shadow-xl md:block">
+      <div className="flex flex-col gap-8">
+        <div className="relative overflow-hidden rounded-[32px] shadow-2xl aspect-video w-full transition-transform hover:scale-[1.02] duration-500">
+          <iframe
+            title="vimeo-player"
+            src="https://player.vimeo.com/video/1119581199?h=17610179a7"
+            className="absolute top-0 left-0 w-full h-full"
+            frameBorder="0"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+            allowFullScreen
+          ></iframe>
+        </div>
+        <div className="hidden rounded-[28px] bg-brand-brown p-6 shadow-xl md:block transition-transform hover:-translate-y-1 duration-300">
           <div className="text-xs font-bold uppercase tracking-[0.2em] text-white/70">{t.whyUs.card.label}</div>
           <div className="mt-3 text-2xl font-bold text-white">{t.whyUs.card.title}</div>
           <div className="mt-2 text-sm text-white/80">{t.whyUs.card.subtitle}</div>

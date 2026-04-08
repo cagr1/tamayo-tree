@@ -120,7 +120,8 @@ export const ContactSection = ({ t }: ContactSectionProps) => (
               </div>
               <div>
                 <div className="text-lg font-bold text-brand-dark">{t.contact.info.phone}</div>
-                <p className="text-brand-muted">+1 612-382-9542</p>
+                <a href="tel:16123829542" className="block text-brand-muted hover:text-brand-brown hover:underline">+1 612-382-9542</a>
+                <a href="tel:16123828804" className="block text-brand-muted hover:text-brand-brown hover:underline">+1 612-382-8804</a>
               </div>
             </div>
 
