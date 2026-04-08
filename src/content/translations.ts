@@ -22,7 +22,7 @@ export const TRANSLATIONS = {
       fastQuote: 'Fast estimate:',
       fastQuoteDesc: 'Snap a photo of your tree and text it to',
       trustRating: '5.0 Rating',
-      trustExp: '15+ Years Experience',
+      trustExp: '5+ Years Experience',
       trustInsured: 'Fully Insured',
     },
     trust: [
@@ -143,7 +143,7 @@ export const TRANSLATIONS = {
       fastQuote: 'Presupuesto rápido:',
       fastQuoteDesc: 'Tome una foto de su árbol y envíela al',
       trustRating: '5.0 Calificación',
-      trustExp: '15+ Años de Experiencia',
+      trustExp: '5+ Años de Experiencia',
       trustInsured: 'Totalmente Asegurado',
     },
     trust: [
